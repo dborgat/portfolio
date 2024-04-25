@@ -1,0 +1,31 @@
+{
+  "Index": {
+    "title": "Hi, i'm David",
+    "subtitle": "How can I help you today?",
+    "mainButtons": {
+      "aboutMe": "About Me",
+      "Experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "Buttons": {
+    "info": "Welcome! 🚀 I invite you to explore my work, experience, and learn more about me. Click on the buttons to find what you need. Contact me if you'd like to collaborate on a project!",
+    "projects": {
+      "title": "I want to know more about your projects:",
+      "subtitle": "Each project has been an opportunity to enhance my technical skills in HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind and more. They have also strengthened my autonomy in decision-making. Interested in learning more? Click here to see them in detail."
+    },
+    "experience": {
+      "title": "Tell me more about your experience:",
+      "subtitle": "For three years, I specialized in front-end development in various roles, from junior to semi-senior. I stand out for playing a key role in significant projects, such as creating a hospital management system for Red Salud and rebranding a website, as well as implementing new features for a job opportunities application. My experiences have taught me the importance of autonomy, working under pressure, and closely collaborating with teams and clients. I am prepared to tackle any future challenge with confidence and determination."
+    },
+    "contact": {
+      "title": "Let's get in touch:",
+      "subtitle": "Let's work together! If you have a project in mind, an idea you want to develop, or just want to say hello, feel free to contact me. I'm ready to listen to your ideas and work together to make them a reality."
+    },
+    "aboutMe": {
+      "title": "Tell me more about you:",
+      "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading."
+    }
+  }
+}

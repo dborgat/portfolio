@@ -1,0 +1,31 @@
+{
+  "Index": {
+    "title": "Hola, soy David",
+    "subtitle": " ¿En qué puedo ayudarte hoy?",
+    "mainButtons": {
+      "aboutMe": "Sobre mí",
+      "Experience": "Experiencia",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    }
+  },
+  "Buttons": {
+    "info": "¡Bienvenido! 🚀 te invito a explorar mi trabajo, experiencia y más sobre mí. Haz clic en los botones para encontrar lo que necesitas. ¡Contáctame si quieres colaborar en un proyecto!",
+    "projects": {
+      "title": "Quiero saber más sobre tus proyectos:",
+      "subtitle": "Cada proyecto ha sido una oportunidad para mejorar mis habilidades técnicas en HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind y más. Además, han fortalecido mi autonomía en la toma de decisiones. ¿Interesado en saber más? Haz clic aquí para verlos en detalle."
+    },
+    "experience": {
+      "title": "Contame sobre tu experiencia profesional:",
+      "subtitle": "Durante tres años, me especialicé en desarrollo front-end en varios roles diferentes, desde junior hasta semi-senior. Me destaco por tener un rol fundamental en proyectos importantes, como la creación de un sistema de gestión hospitalaria para Red Salud y el rebranding de un sitio web y features nuevas para una aplicacion que gestiona oportunidades laborales. Mis experiencias me han enseñado la importancia de la autonomía, trabajar bajo presión y colaborar estrechamente con equipos y clientes. Estoy preparado para enfrentar cualquier desafío futuro con confianza y determinación."
+    },
+    "contact": {
+      "title": "Hablemos de tu próximo proyecto:",
+      "subtitle": "Trabajemos juntos! Si tienes un proyecto en mente, una idea que quieras desarrollar o simplemente quieres saludar, no dudes en contactarme. Estoy dispuesto a escuchar tus ideas y trabajar juntos para hacerlas realidad."
+    },
+    "aboutMe": {
+      "title": "Contame mas de vos:",
+      "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. Fuera del trabajo, disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer."
+    }
+  }
+}
