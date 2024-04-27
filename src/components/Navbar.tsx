@@ -1,38 +1,61 @@
 'use client';
+import { useRouter } from '@/navigation';
+import { motion } from 'framer-motion';
+import { useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import LocaleSwitcherSelect from './LocaleSwitcherSelect';
+import React, { useCallback, useEffect, useState } from 'react';
+import { usePathname } from '../navigation';
 
 interface SidebarProps {
   // Define any props you need for the sidebar component
 }
 
 const Navbar: React.FC<SidebarProps> = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const router = useRouter();
+  const locale = useLocale();
+  // When the user is on `/en`, this will be `/`
+  const pathname = usePathname();
 
   const [isChecked, setIsChecked] = useState(true);
+  const [isBig, setIsBig] = useState(false);
 
   {
     /* toggle dark mode*/
   }
   useEffect(() => {
-    if (isDarkMode) {
+    if (isChecked) {
       document.body.classList.add('dark');
-      setIsChecked(false);
     } else {
       document.body.classList.remove('dark');
     }
-  }, [isDarkMode]);
+  }, [isChecked]);
 
   const handleChangeIsDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
     setIsChecked(!isChecked);
+  };
+
+  const spring = {
+    type: 'spring',
+    stiffness: 700,
+    damping: 30,
+  };
+
+  const handleLocalChange = () => {
+    router.replace(`${pathname}`, { locale: locale === 'es' ? 'en' : 'es' });
   };
 
   return (
     <div className='h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20'>
-      <LocaleSwitcherSelect />
+      <div className='flex gap-3 items-center text-snowWhithe'>
+        <input
+          type='checkbox'
+          checked={locale === 'es'}
+          onChange={handleLocalChange}
+          className='relative appearance-none inline-block w-12 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-0.5 after:left-1 after:h-7 after:w-7 after:rounded-md after:shadow-sm after:font-bold after:p-1 dark:bg-taupe bg-delftBlue
+          after:content-["ESP"] checked:after:content-["ENG"] checked:bg-oldGold'
+        />
+      </div>
       {/* toggle dark mode*/}
       <div className='flex items-center gap-4'>
         <Link href='https://github.com/dborgat' target='_blank'>
@@ -58,7 +81,7 @@ const Navbar: React.FC<SidebarProps> = () => {
           checked={isChecked}
           onChange={handleChangeIsDarkMode}
           className='relative appearance-none inline-block w-9 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-1 after:left-1 after:h-7 after:w-7 after:rounded-md after:shadow-sm  
-        after:bg-sun checked:after:bg-moon checked:bg-eerieBlack bg-oldGold'
+        after:bg-moon checked:after:bg-sun bg-eerieBlack checked:bg-oldGold'
         />
       </div>
       {/* menu button responsive */}

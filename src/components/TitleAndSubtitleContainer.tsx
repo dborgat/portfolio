@@ -16,7 +16,7 @@ const TitleAndSubtitleContainer: React.FC<TitleAndSubtitleContainerProps> = ({
   subtitle,
 }) => {
   return (
-    <div className='w-4/6 self-center mb-24'>
+    <div className='w-4/6 self-center'>
       <div className='min-h-48 text-center'>
         <motion.h1
           initial='hidden'
@@ -36,9 +36,9 @@ const TitleAndSubtitleContainer: React.FC<TitleAndSubtitleContainerProps> = ({
         </motion.h1>
       </div>
       <motion.h1
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
-        className='text-eerieBlack dark:text-nonPhotoBlue font-bold text-5xl text-center'
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 0.5, scale: 1 }}
+        className='text-eerieBlack dark:text-nonPhotoBlue font-light text-5xl text-center'
       >
         {subtitle}
       </motion.h1>

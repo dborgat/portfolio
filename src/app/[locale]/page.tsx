@@ -2,9 +2,10 @@
 import React from 'react';
 import { useTranslations } from 'use-intl';
 import splitStringUsingRegex from '@/utils/splitStringUsingRegex';
-import { ActionButtons } from '@/components/ActionButtons';
-import { InfoContainer } from '@/components/InfoContainer';
+import ActionButtons from '@/components/ActionButtons';
+import InfoContainer from '@/components/InfoContainer';
 import TitleAndSubtitleContainer from '@/components/TitleAndSubtitleContainer';
+import { useRouter } from 'next/navigation';
 
 const Home: React.FC = () => {
   const [buttonsInfo, setButtonsInfo] = React.useState({
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
     subtitle: '',
   });
   const [expand, setExpand] = React.useState(false);
+  const router = useRouter();
 
   const t = useTranslations();
 
@@ -35,26 +37,33 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className='flex flex-col w-full h-full py-5 px-56'>
+    <div className='flex flex-col content-center w-full h-full py-5 px-14'>
       {/* title and subtitle */}
-      <TitleAndSubtitleContainer
-        title={title}
-        defaultAnimations={defaultAnimations}
-        subtitle={subtitle}
-      />
-
+      <div className='w-full h-full flex flex-col justify-center'>
+        <TitleAndSubtitleContainer
+          title={title}
+          defaultAnimations={defaultAnimations}
+          subtitle={subtitle}
+        />
+        {/* <ActionButtons
+          setButtonsInfo={setButtonsInfo}
+          info={info}
+          defaultAnimations={defaultAnimations}
+        /> */}
+      </div>
       {/* buttons and chat */}
-      <div className='w-4/6 self-center h-2/3 flex flex-col justify-between'>
+      <div className='w-full self-center h-full flex flex-col items-center'>
+        {/* <MotionChat /> */}
         <ActionButtons
           setButtonsInfo={setButtonsInfo}
           info={info}
           defaultAnimations={defaultAnimations}
         />
-        <InfoContainer
+        {/* <InfoContainer
           buttonsInfo={buttonsInfo}
           expand={expand}
           setExpand={setExpand}
-        />
+        /> */}
       </div>
     </div>
   );

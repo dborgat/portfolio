@@ -34,8 +34,6 @@ const config: Config = {
       backgroundImage: (theme) => ({
         sun: `url('/sun.svg')`,
         moon: `url('/moon.svg')`,
-        esp: 'es',
-        eng: 'en',
       }),
     },
   },

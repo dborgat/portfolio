@@ -4,8 +4,9 @@ import { Ubuntu } from 'next/font/google';
 import Navbar from '../../components/Navbar';
 import './globals.css';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import TransitionProvides from '@/components/transitionProvides';
 
-const ubuntu = Ubuntu({ weight: '400', subsets: ['latin'] });
+const ubuntu = Ubuntu({ weight: ['300', '400'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'davorDev',
@@ -17,18 +18,20 @@ type Props = {
   params: { locale: 'en' | 'es' };
 };
 
+// Can be imported from a shared config
+const locales = ['en', 'es'];
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
   const messages = useMessages();
   return (
     <html lang={locale}>
       <body className={ubuntu.className}>
         <NextIntlClientProvider messages={messages}>
-          <div className='w-screen h-screen bg-gradient-to-bl from-frenchGrey via-frenchGrey to-slateBlue dark:from-delftBlue dark:to-nigth'>
-            <div className='h-24'>
-              <Navbar />
-            </div>
-            <div className='h-[calc(100vh-6rem)]'>{children}</div>
-          </div>
+          <TransitionProvides>{children}</TransitionProvides>
         </NextIntlClientProvider>
       </body>
     </html>
