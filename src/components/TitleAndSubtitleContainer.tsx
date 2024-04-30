@@ -16,13 +16,13 @@ const TitleAndSubtitleContainer: React.FC<TitleAndSubtitleContainerProps> = ({
   subtitle,
 }) => {
   return (
-    <div className='w-4/6 self-center'>
-      <div className='min-h-48 text-center'>
+    <div className='md:w-4/6 md:self-center'>
+      <div className='md:min-h-48 text-center'>
         <motion.h1
           initial='hidden'
           animate='reveal'
           transition={{ staggerChildren: 0.06 }}
-          className='p-5 tracking-tighter text-9xl bg-gradient-to-bl from-cardinal to-delftBlue dark:from-snowWhithe dark:to-red text-transparent bg-clip-text inline-block'
+          className='p-5 tracking-tighter  md:text-9xl text-6xl bg-gradient-to-bl from-cardinal to-delftBlue dark:from-snowWhithe dark:to-red text-transparent bg-clip-text inline-block'
         >
           {title.map((letter, index) => (
             <motion.span
@@ -38,7 +38,7 @@ const TitleAndSubtitleContainer: React.FC<TitleAndSubtitleContainerProps> = ({
       <motion.h1
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.5, scale: 1 }}
-        className='text-eerieBlack dark:text-nonPhotoBlue font-light text-5xl text-center'
+        className='text-eerieBlack dark:text-nonPhotoBlue font-light text-2xl md:text-5xl text-center'
       >
         {subtitle}
       </motion.h1>

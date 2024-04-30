@@ -15,7 +15,7 @@ const TransitionProvides: React.FC<Props> = ({ children }) => {
     <AnimatePresence>
       <div
         key={pathName}
-        className='w-screen h-screen bg-gradient-to-bl from-frenchGrey via-frenchGrey to-slateBlue dark:from-delftBlue dark:to-nigth'
+        className='w-screen h-full  bg-gradient-to-bl from-frenchGrey via-frenchGrey to-slateBlue dark:from-delftBlue dark:to-nigth'
       >
         {/* <motion.div
           className='h-screen w-screen fixed bg-charcoal rounded-md z-40'
@@ -26,7 +26,7 @@ const TransitionProvides: React.FC<Props> = ({ children }) => {
         <div className='h-24'>
           <Navbar />
         </div>
-        <div className='h-[calc(100vh-6rem)]'>{children}</div>
+        <div className='md:h-[calc(100vh-6rem)]'>{children}</div>
       </div>
     </AnimatePresence>
   );

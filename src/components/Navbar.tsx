@@ -52,8 +52,8 @@ const Navbar: React.FC<SidebarProps> = () => {
           type='checkbox'
           checked={locale === 'es'}
           onChange={handleLocalChange}
-          className='relative appearance-none inline-block w-12 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-0.5 after:left-1 after:h-7 after:w-7 after:rounded-md after:shadow-sm after:font-bold after:p-1 dark:bg-taupe bg-delftBlue
-          after:content-["ESP"] checked:after:content-["ENG"] checked:bg-oldGold'
+          className='relative appearance-none inline-block md:w-12 md:h-9 w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute md:after:top-0.5 after:top-2  after:left-1 md:after:h-7 after:h-3/4 after:w-1/2 md:after:w-7 after:rounded-md after:shadow-sm after:font-bold after:p-1 dark:bg-slateBlue bg-nigth
+          after:content-["ESP"] checked:after:content-["ENG"]'
         />
       </div>
       {/* toggle dark mode*/}
@@ -80,17 +80,9 @@ const Navbar: React.FC<SidebarProps> = () => {
           type='checkbox'
           checked={isChecked}
           onChange={handleChangeIsDarkMode}
-          className='relative appearance-none inline-block w-9 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-1 after:left-1 after:h-7 after:w-7 after:rounded-md after:shadow-sm  
+          className='relative appearance-none inline-block md:w-9 md:h-9 w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute md:after:top-1 after:top-2 md:after:left-1 after:left-2 md:after:h-7 after:h-8 after:w-8 md:after:w-7 after:rounded-md after:shadow-sm  
         after:bg-moon checked:after:bg-sun bg-eerieBlack checked:bg-oldGold'
         />
-      </div>
-      {/* menu button responsive */}
-      <div className='md:hidden'>
-        <button className='w-10 h-8 flex flex-col justify-between'>
-          <div className='w-10 h-1 rounded bg-nigth'></div>
-          <div className='w-10 h-1 rounded bg-nigth'></div>
-          <div className='w-10 h-1 rounded bg-nigth'></div>
-        </button>
       </div>
     </div>
   );

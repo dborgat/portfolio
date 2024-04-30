@@ -37,9 +37,9 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className='flex flex-col content-center w-full h-full py-5 px-14'>
+    <div className='flex flex-col content-center w-full h-full py-5 md:px-14 px-5'>
       {/* title and subtitle */}
-      <div className='w-full h-full flex flex-col justify-center'>
+      <div className='w-full md:h-full h-2/5 flex flex-col justify-center'>
         <TitleAndSubtitleContainer
           title={title}
           defaultAnimations={defaultAnimations}
