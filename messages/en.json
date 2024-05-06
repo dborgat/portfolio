@@ -4,7 +4,7 @@
     "subtitle": "How can I help you today?",
     "mainButtons": {
       "aboutMe": "About Me",
-      "Experience": "Experience",
+      "experience": "Experience",
       "projects": "Projects",
       "contact": "Contact"
     }
@@ -20,11 +20,18 @@
       "subtitle": "For three years, I specialized in front-end development in various roles, from junior to semi-senior. I stand out for playing a key role in significant projects, such as creating a hospital management system for Red Salud and rebranding a website, as well as implementing new features for a job opportunities application. My experiences have taught me the importance of autonomy, working under pressure, and closely collaborating with teams and clients. I am prepared to tackle any future challenge with confidence and determination."
     },
     "contact": {
-      "title": "Let's get in touch:",
+      "title": "Let's get in touch",
+      "mailTitle": "Dear David,",
+      "mailSender": "My mail adress is:",
+      "mailEnd": "Regards! 🚀",
+      "sendButton": "Send",
+      "emailOkFeedback": "Your email has been sent successfully! ✅",
+      "emailErrorFeedback": "An error occurred while sending your email. Please try again later. ❌",
       "subtitle": "Let's work together! If you have a project in mind, an idea you want to develop, or just want to say hello, feel free to contact me. I'm ready to listen to your ideas and work together to make them a reality."
     },
     "aboutMe": {
-      "title": "Tell me more about you:",
+      "title": "A little about me",
+      "contactButton": "Let's talk! 🚀",
       "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading."
     }
   }

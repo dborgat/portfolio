@@ -1,10 +1,10 @@
 {
   "Index": {
     "title": "Hola, soy David",
-    "subtitle": " ¿En qué puedo ayudarte hoy?",
+    "subtitle": "¿En qué puedo ayudarte hoy?",
     "mainButtons": {
       "aboutMe": "Sobre mí",
-      "Experience": "Experiencia",
+      "experience": "Experiencia",
       "projects": "Proyectos",
       "contact": "Contacto"
     }
@@ -20,12 +20,19 @@
       "subtitle": "Durante tres años, me especialicé en desarrollo front-end en varios roles diferentes, desde junior hasta semi-senior. Me destaco por tener un rol fundamental en proyectos importantes, como la creación de un sistema de gestión hospitalaria para Red Salud y el rebranding de un sitio web y features nuevas para una aplicacion que gestiona oportunidades laborales. Mis experiencias me han enseñado la importancia de la autonomía, trabajar bajo presión y colaborar estrechamente con equipos y clientes. Estoy preparado para enfrentar cualquier desafío futuro con confianza y determinación."
     },
     "contact": {
-      "title": "Hablemos de tu próximo proyecto:",
+      "title": "Contactemos",
+      "mailTitle": "Estimado David,",
+      "mailSender": "Mi mail es:",
+      "mailEnd": "Muchas gracias! 🚀",
+      "sendButton": "Enviar",
+      "emailOkFeedback": "¡Gracias por tu mensaje! ✅",
+      "emailErrorFeedback": "¡Ups! Algo salió mal. Por favor, intenta nuevamente. ❌",
       "subtitle": "Trabajemos juntos! Si tienes un proyecto en mente, una idea que quieras desarrollar o simplemente quieres saludar, no dudes en contactarme. Estoy dispuesto a escuchar tus ideas y trabajar juntos para hacerlas realidad."
     },
     "aboutMe": {
-      "title": "Contame mas de vos:",
-      "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. Fuera del trabajo, disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer."
+      "title": "Un breve repaso sobre mí",
+      "contactButton": "Contactemos! 🚀",
+      "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. también disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer."
     }
   }
 }
