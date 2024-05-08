@@ -15,7 +15,6 @@ const config: Config = {
       raisinBlack: '#282230',
       taupe: '#54453B',
       charcoal: '#2E4052',
-      eerieBlack: '#202419',
       delftBlue: '#303073',
       slateBlue: '#6161BD',
       nonPhotoBlue: '#C3F1FD',
@@ -28,6 +27,8 @@ const config: Config = {
       frenchGrey: '#CACFD6',
       gunMetal: '#0A2239',
       cerulean: '#06759D',
+      eerieBlack: '#1F1E1F',
+      pumpkin: '#FA8334',
       transparent: 'transparent',
     },
     extend: {

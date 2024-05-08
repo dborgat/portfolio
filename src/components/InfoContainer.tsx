@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Icons } from './icons';
-import { useTranslations } from 'next-intl';
-import Typewriter from './Typewriter';
 
 interface InfoContainerProps {
   buttonsInfo: {

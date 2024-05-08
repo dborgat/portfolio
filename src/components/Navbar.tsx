@@ -48,7 +48,7 @@ const Navbar: React.FC<SidebarProps> = () => {
     >
       <div className='flex items-center text-snowWhithe'>
         <Link href={`/${locale}`} passHref>
-          <span className='text-xl bg-gradient-to-bl from-cardinal to-delftBlue dark:from-slateBlue dark:to-cardinal text-bg-frenchGrey px-1 py-2 rounded-md'>
+          <span className='text-xl bg-nigth text-bg-frenchGrey p-2 rounded-md'>
             {'<DB/>'}
           </span>
         </Link>

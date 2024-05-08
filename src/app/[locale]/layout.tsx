@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
 import React from 'react';
-import { Ubuntu } from 'next/font/google';
+import { Ubuntu, Titillium_Web } from 'next/font/google';
 import Navbar from '../../components/Navbar';
 import './globals.css';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-import TransitionProvides from '@/components/transitionProvides';
 
 const ubuntu = Ubuntu({ weight: ['300', '400'], subsets: ['latin'] });
+const titillium = Titillium_Web({
+  weight: ['300', '400', '900', '200'],
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'davorDev',
@@ -28,10 +31,12 @@ export function generateStaticParams() {
 const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
   const messages = useMessages();
   return (
-    <html lang={locale}>
-      <body className={ubuntu.className}>
+    <html lang={locale} className='w-screen h-full bg-delftBlue'>
+      <body className={titillium.className}>
+        <div className='absolute pointer-events-none inset-0 -z-40 h-full bg-[url("/noisetexture.jpg")] opacity-20 mix-blend-soft-light'></div>
         <NextIntlClientProvider messages={messages}>
-          <TransitionProvides>{children}</TransitionProvides>
+          <div className='h-24'>{/* <Navbar /> */}</div>
+          <div className='md:h-[calc(100vh-6rem)]'>{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>

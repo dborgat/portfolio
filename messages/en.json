@@ -1,7 +1,8 @@
 {
   "Index": {
-    "title": "Hi, i'm David",
-    "subtitle": "How can I help you today?",
+    "name": "David",
+    "lastName": " Borgat",
+    "subtitle": "Frontend Developer",
     "mainButtons": {
       "aboutMe": "About Me",
       "experience": "Experience",
