@@ -4,6 +4,7 @@ import { Ubuntu, Titillium_Web } from 'next/font/google';
 import Navbar from '../../components/Navbar';
 import './globals.css';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
+import Header from '@/components/Header';
 
 const ubuntu = Ubuntu({ weight: ['300', '400'], subsets: ['latin'] });
 const titillium = Titillium_Web({
@@ -33,9 +34,12 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
   return (
     <html lang={locale} className='w-screen h-full bg-delftBlue'>
       <body className={titillium.className}>
-        <div className='absolute pointer-events-none inset-0 -z-40 h-full bg-[url("/noisetexture.jpg")] opacity-20 mix-blend-soft-light'></div>
+        {/* <div className='absolute pointer-events-none inset-0 -z-40 h-full bg-[url("/noisetexture.jpg")] opacity-20 mix-blend-soft-light'></div> */}
         <NextIntlClientProvider messages={messages}>
-          <div className='h-24'>{/* <Navbar /> */}</div>
+          <div className='h-24'>
+            {/* <Navbar /> */}
+            {/* <Header /> */}
+          </div>
           <div className='md:h-[calc(100vh-6rem)]'>{children}</div>
         </NextIntlClientProvider>
       </body>

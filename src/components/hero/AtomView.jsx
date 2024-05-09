@@ -1,23 +1,38 @@
 import * as THREE from 'three';
 import { useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Trail, Float, Line, Sphere, Stars } from '@react-three/drei';
+import {
+  Trail,
+  Float,
+  Line,
+  Sphere,
+  Stars,
+  ContactShadows,
+} from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 export default function AtomView() {
   return (
-    <Canvas camera={{ position: [0, 0, 10] }}>
-      {/* <color attach='background' args={['black']} /> */}
-      <Float speed={2} rotationIntensity={3} floatIntensity={4}>
-        <Atom />
-      </Float>
-      <Stars saturation={0} count={900} speed={0.5} />
-      <EffectComposer>
-        <Bloom luminanceThreshold={1} radius={0.7} />
-      </EffectComposer>
-    </Canvas>
+    <div className='md:col-start-2 -mt-9 aspect-square row-span-1'>
+      <Canvas camera={{ position: [0, 0, 10] }}>
+        <Float speed={2} rotationIntensity={3} floatIntensity={4}>
+          <Atom />
+        </Float>
+        <ContactShadows
+          position={[0, -3.5, 0]}
+          opacity={0.65}
+          scale={20}
+          blur={1}
+          far={20}
+        />
+        <Stars saturation={0} count={900} speed={0.5} />
+        <EffectComposer>
+          <Bloom luminanceThreshold={1} radius={0.7} />
+        </EffectComposer>
+      </Canvas>
+    </div>
   );
 }
 

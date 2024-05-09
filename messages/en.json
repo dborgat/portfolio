@@ -32,8 +32,14 @@
     },
     "aboutMe": {
       "title": "A little about me",
+      "technologies": "Technologies",
       "contactButton": "Let's talk! 🚀",
-      "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading."
+      "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading.",
+      "content1": "Durante los últimos tres años, me he desempeñado como desarrollador front-end, centrándome en la generación de código escalable y la mejora continua de proyectos existentes.",
+      "content2": "Uno de mis mayores logros fue liderar el desarrollo de un sistema de gestión para medir la disponibilidad de camas en los hospitales de Red Salud, cumpliendo con sus exigentes requisitos. Además, participé en el proceso de rebranding de mi último trabajo, donde contribuí a la creación de un sitio web actualizado y una aplicación con nuevas funcionalidades.",
+      "content3": "Mis experiencias anteriores me han enseñado la importancia de la independencia en la resolución de problemas y cuándo buscar ayuda cuando es necesario. También he fortalecido mis habilidades técnicas y he aprendido a trabajar en estrecha colaboración con equipos UX/UI y clientes para comprender mejor sus necesidades y requisitos. Participar en el modelado de reglas para mantener el código limpio fue una experiencia enriquecedora que me permitió mejorar mis habilidades de colaboración y comunicación.",
+      "content4": "En resumen, todas mis experiencias anteriores me han ayudado a crecer tanto a nivel personal como profesional. He aprendido a trabajar bajo presión, a tener autonomía y a comprender los requisitos específicos de cada tarea o proyecto en el que he trabajado. Estoy seguro de que mi experiencia previa me ha preparado para enfrentar cualquier desafío que surja en el futuro.",
+      "resume": "Download my resume"
     }
   }
 }

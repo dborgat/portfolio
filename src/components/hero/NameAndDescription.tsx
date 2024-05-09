@@ -17,7 +17,7 @@ const NameAndDescription: React.FC = () => {
   };
   return (
     <>
-      <h1 className='md:text-[16rem] text-9xl font-extrabold leading-none tracking-tighter bg-cardinal box'>
+      <h1 className='md:text-[16rem] text-8xl font-extrabold leading-none tracking-tighter bg-cardinal opacity-0 box'>
         <span className='text-pumpkin block md:-ml-8 -ml-3'>
           {renderLetters(t('Index.name'), 'name')}
         </span>

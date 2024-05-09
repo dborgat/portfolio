@@ -29,8 +29,17 @@ const Home: React.FC = () => {
     () => {
       const tl = gsap.timeline();
       tl.fromTo(
+        '.box',
+        { opacity: 0 },
+        {
+          opacity: 1,
+          ease: 'elastic.out(1,0.3)',
+          duration: 1,
+        }
+      );
+      tl.fromTo(
         '.name-animation-name',
-        { opacity: 0, x: 50, rotate: 10 },
+        { opacity: 0, x: -50, rotate: -10 },
         {
           opacity: 1,
           rotate: 0,
@@ -61,24 +70,24 @@ const Home: React.FC = () => {
   );
 
   return (
-    <Bounded className='grid min-h-[70vh] md:grid-cols-2 grid-cols-1 items-center'>
-      <AtomView />
+    <Bounded className='grid min-h-[90vh] md:grid-cols-2 grid-cols-1 items-center'>
       {/* <Shapes /> */}
-      <div className='md:col-start-2' ref={component}>
-        {/* title and subtitle */}
-        {/* <div className='w-full md:h-full h-2/5 flex flex-col justify-center'>
+      <div className='md:col-start-1' ref={component}>
+        <NameAndDescription />
+      </div>
+      {/* title and subtitle */}
+      {/* <div className='w-full md:h-full h-2/5 flex flex-col justify-center'>
         <TitleAndSubtitleContainer
         title={title}
         defaultAnimations={defaultAnimations}
         subtitle={subtitle}
         />
       </div> */}
-        <NameAndDescription />
-        {/* buttons */}
-        {/* <div className='w-full self-center h-full flex flex-col items-center'>
+      {/* buttons */}
+      {/* <div className='w-full self-center h-full flex flex-col items-center'>
         <ActionButtons info={info} defaultAnimations={defaultAnimations} />
       </div> */}
-      </div>
+      <AtomView />
     </Bounded>
   );
 };
