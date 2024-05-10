@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
-export default function Avatar() {
+const Avatar: React.FC = () => {
   const img = useRef<HTMLDivElement>(null);
   const img2 = useRef<HTMLDivElement>(null);
 
@@ -73,4 +73,6 @@ export default function Avatar() {
       </div>
     </>
   );
-}
+};
+
+export default Avatar;

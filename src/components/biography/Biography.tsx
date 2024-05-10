@@ -3,15 +3,15 @@ import Bounded from '../Bounded';
 import Heading from '../Heading';
 import { useTranslations } from 'next-intl';
 import Button from '../Button';
-import Image from 'next/image';
 import Avatar from './Avatar';
+import TechList from './TechList';
 
 const Biography: React.FC = () => {
   const t = useTranslations('Buttons.aboutMe');
 
   return (
     <Bounded>
-      <div className='md:grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr] pb-5'>
+      <div className='md:grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr] pb-24 md:mt-10'>
         <Heading
           as='h1'
           size='xl'
@@ -28,6 +28,7 @@ const Biography: React.FC = () => {
         <Button text={t('resume')} showLinkIcon={false} className='mt-8' />
         <Avatar />
       </div>
+      <TechList />
     </Bounded>
   );
 };
