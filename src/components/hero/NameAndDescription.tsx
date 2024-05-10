@@ -3,6 +3,9 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { useTranslations } from 'next-intl';
 import React, { useRef } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Icons from 'lucide-react';
 
 const NameAndDescription: React.FC = () => {
   const component = useRef(null);
@@ -65,7 +68,25 @@ const NameAndDescription: React.FC = () => {
   );
 
   return (
-    <div ref={component} className='md:col-start-1'>
+    <div ref={component} className='md:col-start-1 size-full content-center'>
+      <div className='grid grid-cols-2 justify-between static'>
+        <Link href='https://github.com/dborgat' target='_blank'>
+          <Image
+            src='/github-mark.svg'
+            alt='github icon'
+            width={15}
+            height={15}
+            priority
+            className='absolute inset-y-52 left-6 w-11 md:hidden'
+          />
+        </Link>
+        <Link href='https://www.linkedin.com/in/david-borgat' target='_blank'>
+          <h1 className='lg:text-5xl text-3xl font-bold leading-none job-title opacity-0 text-right '>
+            <span className='text-nigth'>/d</span>
+            <span className='text-pumpkin hover:text-Linkedin'>borgat</span>
+          </h1>
+        </Link>
+      </div>
       <h1 className='2xl:text-[16rem] text-8xl md:text-9xl lg:text-[11rem] font-extrabold leading-none text-center md:text-left tracking-tighter bg-cardinal opacity-0 z-20 box'>
         <span className='text-pumpkin block md:-ml-8 -ml-3'>
           {renderLetters(t('Index.name'), 'name')}

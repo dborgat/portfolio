@@ -15,7 +15,7 @@ import { useGSAP } from '@gsap/react';
 
 export default function AtomView() {
   return (
-    <div className='md:col-start-2 -mt-9 aspect-square row-span-1'>
+    <div className='md:col-start-2 -mt-9 size-64 md:size-full'>
       <Canvas camera={{ position: [0, 0, 10] }}>
         <Float speed={2} rotationIntensity={3} floatIntensity={4}>
           <Atom />

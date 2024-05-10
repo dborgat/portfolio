@@ -29,6 +29,8 @@ const config: Config = {
       cerulean: '#06759D',
       eerieBlack: '#1F1E1F',
       pumpkin: '#FA8334',
+      silver: '#BFC0C0',
+      Linkedin: '#0e76a8',
       transparent: 'transparent',
     },
     extend: {

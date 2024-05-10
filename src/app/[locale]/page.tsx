@@ -6,7 +6,7 @@ import AtomView from '@/components/hero/AtomView';
 
 const Home: React.FC = () => {
   return (
-    <Bounded className='grid min-h-[90vh] md:grid-cols-2 grid-cols-1 items-center'>
+    <Bounded className='grid min-h-[90vh] md:grid-cols-2 grid-cols-1 items-center justify-items-center'>
       <NameAndDescription />
       <AtomView />
     </Bounded>

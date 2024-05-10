@@ -2,38 +2,22 @@
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { AlignJustify, X } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import { usePathname } from '../navigation';
 import { useRouter } from '@/navigation';
 
-import { navbarData } from '@/utils/constants';
-
 const Header: React.FC = () => {
   const router = useRouter();
   const locale = useLocale();
-  // When the user is on `/en`, this will be `/`
   const pathname = usePathname();
 
   const [open, setOpen] = useState(false);
-  const [isChecked, setIsChecked] = useState(true);
 
   const t = useTranslations('Index.mainButtons');
 
-  useEffect(() => {
-    if (isChecked) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [isChecked]);
-
   const handleLocalChange = () => {
     router.replace(`${pathname}`, { locale: locale === 'es' ? 'en' : 'es' });
-  };
-
-  const handleChangeIsDarkMode = () => {
-    setIsChecked(!isChecked);
   };
 
   return (
@@ -119,20 +103,13 @@ const Header: React.FC = () => {
                 </span>
               </Link>
             </li>
-            <li className='flex justify-between md:hidden'>
+            <li>
               <input
                 type='checkbox'
                 checked={locale === 'es'}
                 onChange={handleLocalChange}
-                className='relative appearance-none inline-block md:w-12 md:h-9 w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute md:after:top-0.5 after:top-2  after:left-1 md:after:h-7 after:h-3/4 after:w-1/2 md:after:w-7 after:rounded-md after:shadow-sm after:font-bold after:p-1 bg-pumpkin
-          after:content-["ESP"] checked:after:content-["ENG"]'
-              />
-              <input
-                type='checkbox'
-                checked={isChecked}
-                onChange={handleChangeIsDarkMode}
-                className='relative appearance-none inline-block md:w-9 md:h-9 w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute md:after:top-1 after:top-2 md:after:left-1 after:left-2 md:after:h-7 after:h-8 after:w-8 md:after:w-7 after:rounded-md after:shadow-sm  
-        after:bg-moon checked:after:bg-sun bg-eerieBlack checked:bg-oldGold'
+                className='relative appearance-none inline-block w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-2  after:left-0.4 md:after:h-7 after:h-3/4 after:w-1/2 after:rounded-md after:shadow-sm after:font-bold after:p-1 bg-pumpkin
+          after:content-["ESP"] checked:after:content-["ENG"] after:text-xl md:hidden'
               />
             </li>
           </ul>
