@@ -37,41 +37,38 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className='top-0 z-50 mx-auto md:max-w-7xl w-5/6 md:sticky md:top-4 bg-nigth rounded-lg shadow-xl px-4 py-3'>
+    <header className='top-5 left-12 md:left-20 lg:left-28 xl:left-40 z-50 w-5/6 fixed lg:top-4 bg-nigth rounded-lg shadow-xl px-4 py-3'>
       <nav
         className={clsx(
           'flex justify-end md:text-2xl font-sans font-bold text-lg',
-          pathname !== `/${locale}` && 'justify-between'
+          pathname !== `/` && 'justify-between'
         )}
       >
         <Link
           href={`/${locale}`}
           passHref
-          className={clsx(
-            'flex items-center',
-            pathname === `/${locale}` && 'hidden md:hidden'
-          )}
+          className={clsx('flex items-center', pathname === `/` && 'hidden')}
         >
           <h1 className='text-pumpkin'>David Borgat</h1>
         </Link>
         <button
           aria-expanded={open}
           aria-label='Open menu'
-          className='block p-2 text-2xl text-slate-800 md:hidden'
+          className='block p-2 text-2xl text-slate-800 xl:hidden'
           onClick={() => setOpen(true)}
         >
           <AlignJustify color='#FA8334' size={30} />
         </button>
         <div
           className={clsx(
-            'fixed bottom-0 left-0 right-0 top-0 z-50 flex flex-col items-center h-2/5 rounded-b-lg gap-4 pr-10 pt-24 transition-transform duration-300 ease-in-out md:hidden bg-nigth shadow-xl',
+            'fixed bottom-0 left-0 right-0 top-0 z-50 flex flex-col items-center h-2/5 rounded-b-lg gap-4 pr-10 pt-24 transition-transform duration-300 ease-in-out xl:hidden bg-nigth shadow-xl',
             open ? 'translate-x-0' : 'translate-x-[100%]'
           )}
         >
           <button
             aria-label='Close menu'
             aria-expanded={open}
-            className='fixed right-12 top-8 block p-2 text-2xl md:hidden'
+            className='fixed right-12 top-8 block p-2 text-2xl xl:hidden'
             onClick={() => setOpen(false)}
           >
             <X color='#FA8334' size={40} />
@@ -122,7 +119,7 @@ const Header: React.FC = () => {
                 </span>
               </Link>
             </li>
-            <li className='flex justify-between'>
+            <li className='flex justify-between md:hidden'>
               <input
                 type='checkbox'
                 checked={locale === 'es'}
@@ -140,7 +137,7 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </div>
-        <ul className='md:flex flex-row justify-between w-2/5 p-1 hidden'>
+        <ul className='xl:flex flex-row justify-between xl:w-3/6 2xl:w-2/5 p-1 hidden'>
           <li
             className={
               'group relative flex w-fit items-center justify-center overflow-hidden rounded-md border-2 border-nigth px-4 py-2 font-semibold transition-transform ease-out hover:scale-105'

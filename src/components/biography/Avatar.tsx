@@ -44,7 +44,7 @@ const Avatar: React.FC = () => {
   return (
     <>
       <div
-        className='relative row-start-1 max-w-sm md:col-start-2 md:row-start-1 md:row-end-3 content-between hidden md:block'
+        className='relative row-start-1 max-w-sm md:col-start-2 md:row-start-1 md:row-end-3 content-between hidden lg:block'
         ref={img2}
       >
         <div className='avatar2 overflow-hidden rounded-3xl border-2 border-nigth -rotate-3 opacity-0'>
@@ -59,7 +59,7 @@ const Avatar: React.FC = () => {
       </div>
       <div
         ref={img}
-        className='relative row-start-1 max-w-sm md:col-start-2 md:row-start-2 md:row-end-3 content-end hidden md:block'
+        className='relative row-start-1 max-w-sm md:col-start-2 md:row-start-2 md:row-end-3 content-end hidden lg:block'
       >
         <div className='avatar overflow-hidden rounded-3xl border-2 border-nigth opacity-0 rotate-3'>
           <Image

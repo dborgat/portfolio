@@ -66,7 +66,7 @@ const NameAndDescription: React.FC = () => {
 
   return (
     <div ref={component} className='md:col-start-1'>
-      <h1 className='md:text-[16rem] text-8xl font-extrabold leading-none text-center md:text-left tracking-tighter bg-cardinal opacity-0 z-20 box'>
+      <h1 className='2xl:text-[16rem] text-8xl md:text-9xl lg:text-[11rem] font-extrabold leading-none text-center md:text-left tracking-tighter bg-cardinal opacity-0 z-20 box'>
         <span className='text-pumpkin block md:-ml-8 -ml-3'>
           {renderLetters(t('Index.name'), 'name')}
         </span>

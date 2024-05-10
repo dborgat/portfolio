@@ -4,6 +4,7 @@ import { Ubuntu, Titillium_Web } from 'next/font/google';
 import './globals.css';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import Header from '@/components/Header';
+import clsx from 'clsx';
 
 const ubuntu = Ubuntu({ weight: ['300', '400'], subsets: ['latin'] });
 const titillium = Titillium_Web({
@@ -32,7 +33,24 @@ const RootLayout: React.FC<Props> = ({ children, params: { locale } }) => {
   const messages = useMessages();
   return (
     <html lang={locale} className=' bg-delftBlue'>
-      <body className={titillium.className}>
+      <body className={clsx('static', titillium.className)}>
+        <div className='fixed inset-y-96 right-5 bg-nigth p-4 h-36 z-50 rounded-lg hidden md:flex flex-col justify-between'>
+          <input
+            type='checkbox'
+            //checked={isChecked}
+            //onChange={handleChangeIsDarkMode}
+            className='relative  appearance-none inline-block w-12 h-12 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-2 after:left-2 after:h-8 after:w-8 after:rounded-md after:shadow-sm  
+        after:bg-moon checked:after:bg-sun bg-eerieBlack checked:bg-oldGold'
+          />
+          <input
+            type='checkbox'
+            checked={locale === 'es'}
+            // onChange={handleLocalChange}
+            className='relative appearance-none inline-block w-12 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-0.5 after:left-1 after:h-7 after:w-1/2 after:rounded-md after:shadow-sm after:font-bold after:p-1 dark:bg-slateBlue bg-nigth
+          after:content-["ESP"] checked:after:content-["ENG"]'
+          />
+        </div>
+
         <NextIntlClientProvider messages={messages}>
           <div className='h-24 content-center'>
             <Header />
