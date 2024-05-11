@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Bounded from '../Bounded';
 import Heading from '../Heading';
@@ -5,13 +6,28 @@ import { useTranslations } from 'next-intl';
 import Button from '../Button';
 import Avatar from './Avatar';
 import TechList from './TechList';
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import Experience from './Experience';
 
 const Biography: React.FC = () => {
+  const component = React.useRef(null);
   const t = useTranslations('Buttons.aboutMe');
 
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        '.biography',
+        { opacity: 0 },
+        { opacity: 1, ease: 'elastic.out(1,0.4)', duration: 1 }
+      );
+    },
+    { scope: component }
+  );
+
   return (
-    <Bounded>
-      <div className='lg:grid gap-x-8 gap-y-6 lg:grid-cols-[2fr,1fr] pb-24 md:mt-10'>
+    <Bounded ref={component}>
+      <div className='lg:grid gap-x-8 gap-y-6 lg:grid-cols-[2fr,1fr] pb-24 md:mt-10 biography opacity-0'>
         <Heading
           as='h1'
           size='xl'
@@ -29,6 +45,7 @@ const Biography: React.FC = () => {
         <Avatar />
       </div>
       <TechList />
+      <Experience />
     </Bounded>
   );
 };

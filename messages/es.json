@@ -7,7 +7,9 @@
       "aboutMe": "Sobre mí",
       "experience": "Experiencia",
       "projects": "Proyectos",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
     }
   },
   "Buttons": {
@@ -33,10 +35,11 @@
     "aboutMe": {
       "title": "Un breve repaso sobre mí",
       "technologies": "Tecnologías",
+      "experience": "Experiencia",
       "contactButton": "Contactemos! 🚀",
       "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. también disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer.",
       "content1": "Durante los últimos tres años, me he desempeñado como desarrollador front-end, centrándome en la generación de código escalable y la mejora continua de proyectos existentes.",
-      "content2": "Uno de mis mayores logros fue tener un rol muy participativo el desarrollo de un sistema de gestión para medir la disponibilidad de camas en los hospitales de Red Salud, cumpliendo con sus exigentes requisitos. Además, participé en el proceso de rebranding de mi último trabajo, donde contribuí a la creación de un sitio web actualizado y una aplicación con nuevas funcionalidades.",
+      "content2": "Uno de mis mayores logros fue tener un rol muy participativo en el desarrollo de un sistema de gestión para medir la disponibilidad de camas en los hospitales de Red Salud, cumpliendo con sus exigentes requisitos. Además, participé en el proceso de rebranding de mi último trabajo, donde contribuí a la creación de un sitio web actualizado y una aplicación con nuevas funcionalidades.",
       "content3": "Mis experiencias anteriores me han enseñado la importancia de la independencia en la resolución de problemas y cuándo buscar ayuda cuando es necesario. También he fortalecido mis habilidades técnicas y he aprendido a trabajar en estrecha colaboración con equipos UX/UI y clientes para comprender mejor sus necesidades y requisitos. Participar en el modelado de reglas para mantener el código limpio fue una experiencia enriquecedora que me permitió mejorar mis habilidades de colaboración y comunicación.",
       "content4": "En resumen, todas mis experiencias anteriores me han ayudado a crecer tanto a nivel personal como profesional. He aprendido a trabajar bajo presión, a tener autonomía y a comprender los requisitos específicos de cada tarea o proyecto en el que he trabajado. Estoy seguro de que mi experiencia previa me ha preparado para enfrentar cualquier desafío que surja en el futuro.",
       "resume": "Descargar CV"

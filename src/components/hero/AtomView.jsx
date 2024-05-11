@@ -15,7 +15,7 @@ import { useGSAP } from '@gsap/react';
 
 export default function AtomView() {
   return (
-    <div className='md:col-start-2 -mt-9 size-64 md:size-full'>
+    <div className='md:col-start-2 -mt-9 hidden md:block size-full'>
       <Canvas camera={{ position: [0, 0, 10] }}>
         <Float speed={2} rotationIntensity={3} floatIntensity={4}>
           <Atom />
@@ -27,7 +27,7 @@ export default function AtomView() {
           blur={1}
           far={20}
         />
-        <Stars saturation={0} count={900} speed={0.5} />
+        <Stars saturation={0} count={4000} speed={0.5} fade={true} />
         <EffectComposer>
           <Bloom luminanceThreshold={1} radius={0.7} />
         </EffectComposer>
