@@ -39,7 +39,7 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
 
   return (
     <div ref={component}>
-      <div className='fixed inset-y-96 right-5 bg-nigth p-4 h-60 z-50 rounded-lg hidden md:flex flex-col justify-between opacity-0 stickyButtons'>
+      <div className='fixed inset-y-96 right-5 bg-nigth p-4 h-60 z-50 rounded-lg hidden lg:flex flex-col justify-between opacity-0 stickyButtons'>
         <input
           type='checkbox'
           checked={locale === 'es'}

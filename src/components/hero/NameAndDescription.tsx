@@ -92,7 +92,7 @@ const NameAndDescription: React.FC = () => {
         <span className='text-nigth'>Frontend</span>
         <span className='text-cardinal'>Developer</span>
       </h1>
-      <div className='size-auto m-auto mt-14 grid gap-10 py-5 md:hidden'>
+      <div className='size-auto m-auto mt-14 grid gap-10 py-5 lg:hidden'>
         <Link href={`/${locale}/about`} passHref>
           <div
             className={

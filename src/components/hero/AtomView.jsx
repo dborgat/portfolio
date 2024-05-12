@@ -1,21 +1,14 @@
 import * as THREE from 'three';
 import { useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import {
-  Trail,
-  Float,
-  Line,
-  Sphere,
-  Stars,
-  ContactShadows,
-} from '@react-three/drei';
+import { Float, Line, Sphere, Stars, ContactShadows } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 export default function AtomView() {
   return (
-    <div className='lg:col-start-2 -mt-9 hidden lg:block size-full'>
+    <div className='lg:col-start-2 -mt-9 hidden lg:block size-3/4'>
       <Canvas camera={{ position: [0, 0, 10] }}>
         <Float speed={2} rotationIntensity={3} floatIntensity={4}>
           <Atom />

@@ -54,9 +54,8 @@ export const workExperience = [
   },
 ];
 
-export const navbarData = [
-  { name: 'About', link: '/about' },
-  { name: 'Projects', link: '/projects' },
-  { name: 'Experience', link: '/experience' },
-  { name: 'Contact', link: '/contact' },
+export const headerRouter = [
+  { link: '/about', color: 'battleshipGrey' },
+  { link: '/projects', color: 'slateBlue' },
+  { link: '/contact', color: 'cardinal' },
 ];
