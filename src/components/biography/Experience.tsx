@@ -165,13 +165,13 @@ const Experience: React.FC = () => {
         >
           {t('experience')}
         </Heading>
-        <div className='md:grid hidden gap-5'>
+        <div className='md:grid hidden md:justify-items-center gap-5'>
           {workExperience.map(
             ({ company, title, logo, tecnologies }, index) => (
               <div
                 key={index}
                 className={clsx(
-                  `bg-nigth p-5 rounded-lg tech-row-${index} md:opacity-0 shadow-2xl`
+                  `bg-nigth p-5 rounded-lg tech-row-${index} w-11/12 opacity-0 shadow-2xl`
                 )}
               >
                 <div className='mb-5 md:flex grid md:items-center gap-3 justify-items-center'>
