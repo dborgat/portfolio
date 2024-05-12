@@ -47,11 +47,11 @@ const Header: React.FC = () => {
   return (
     <div ref={component}>
       <div className='header opacity-0'>
-        <div className='flex flex-row justify-between px-5'>
+        <div className='flex flex-row justify-between px-5 lg:hidden'>
           {pathname !== `/` && (
             <button
               onClick={handleGoBack}
-              className='w-12 h-12 rounded-md shadow-md font-semibold text-4xl grid content-start bg-pumpkin md:hidden'
+              className='w-12 h-12 rounded-md shadow-md font-semibold text-4xl grid content-start bg-pumpkin '
             >
               {`<`}
             </button>

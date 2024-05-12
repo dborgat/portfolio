@@ -21,6 +21,27 @@ const Biography: React.FC = () => {
         { opacity: 0 },
         { opacity: 1, ease: 'elastic.out(1,0.4)', duration: 1 }
       );
+      gsap.fromTo(
+        '.avatar2',
+        { opacity: 0, scale: 1.4 },
+        {
+          opacity: 1,
+          scale: 1,
+          ease: 'power3.inOut',
+          duration: 1,
+        }
+      );
+      gsap.fromTo(
+        '.avatar',
+        { opacity: 0, scale: 1.4 },
+        {
+          opacity: 1,
+          scale: 1,
+          ease: 'power3.inOut',
+          duration: 1.3,
+          delay: 0.5,
+        }
+      );
     },
     { scope: component }
   );

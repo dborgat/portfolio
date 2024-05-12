@@ -235,7 +235,7 @@ const Experience: React.FC = () => {
                   )}
                   <span className='text-oldGold text-2xl font-semibold font-sans tracking-tighter block'>
                     {title} :
-                    <span className='font-sans font-bold text-cardinal text-2xl ml-2 tracking-tighter'>
+                    <span className='font-sans font-bold text-cardinal text-2xl tracking-tighter block'>
                       {t(`jobsDescription.${keys[index]}.date`)}
                     </span>
                   </span>

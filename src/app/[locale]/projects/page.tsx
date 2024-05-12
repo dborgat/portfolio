@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
 
   return (
     <Bounded ref={component}>
-      <div className='grid gap-y-16 pb-24 md:mt-10 projects opacity-0'>
+      <div className='grid gap-y-10 pb-24 md:mt-10 projects opacity-0'>
         <Heading as='h1' size='xl' className='text-center text-pumpkin'>
           {t('title')}
         </Heading>

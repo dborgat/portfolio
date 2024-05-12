@@ -47,6 +47,11 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
           className='relative appearance-none inline-block w-12 h-9 cursor-pointer rounded-md shadow-md transitions-all after:absolute after:top-0.5 after:left-0.5 after:h-7 after:w-1/2 after:rounded-md after:shadow-sm after:font-bold after:p-1 bg-slateBlue
     after:content-["ESP"] checked:after:content-["ENG"] after:text-xl'
         />
+        <div className=' grid justify-center rounded-md p-1 bg-slateBlue'>
+          <Link href='/' download='/davor2.jpeg'>
+            <Icons.FileInput size={40} />
+          </Link>
+        </div>
         <div className='bg-slateBlue grid justify-center rounded-md p-1'>
           <Link href='https://github.com/dborgat' target='_blank'>
             <Image
@@ -56,11 +61,6 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
               height={40}
               priority
             />
-          </Link>
-        </div>
-        <div className=' grid justify-center rounded-md p-1 bg-slateBlue'>
-          <Link href='/' download='/davor2.jpeg'>
-            <Icons.FileInput size={40} />
           </Link>
         </div>
         <div className=' grid justify-center rounded-md'>
