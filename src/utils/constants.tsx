@@ -1,39 +1,3 @@
-import { Icons } from '@/components/icons';
-import { color } from 'framer-motion';
-
-const createIcon = (IconComponent: React.ElementType) => (
-  <IconComponent
-    className={`md:w-14 w-8 md:h-14 h-8 self-end text-frenchGrey`}
-  />
-);
-
-export const buttonsLinks = [
-  {
-    name: 'Projects',
-    icon: createIcon(Icons.FolderOpenDot),
-    mobileReverse: false,
-    link: '/projects',
-  },
-  {
-    name: 'About',
-    icon: createIcon(Icons.AboutMe),
-    mobileReverse: true,
-    link: '/about',
-  },
-  {
-    name: 'Experience',
-    icon: createIcon(Icons.Up),
-    mobileReverse: false,
-    link: '/experience',
-  },
-  {
-    name: 'Contact',
-    icon: createIcon(Icons.Handshake),
-    mobileReverse: true,
-    link: '/contact',
-  },
-];
-
 export const techListArray = [
   { name: 'React', color: '#E55381' },
   { name: 'Next.js', color: '#8CB369' },
@@ -47,6 +11,47 @@ export const techListArray = [
   { name: 'Framer Motion', color: '#CE1483' },
   { name: 'Node.js', color: '#ABE188' },
   { name: 'Git', color: '#EAE151' },
+];
+
+export const workExperience = [
+  {
+    title: ' Frontend Developer',
+    logo: false,
+    tecnologies: ['React', 'Next.js', 'Tailwind CSS', 'Styled Components'],
+    company: 'Freelance',
+  },
+  {
+    title: ' Frontend Developer',
+    logo: '/genoma.svg',
+    tecnologies: ['React', 'Ant Design (AntD)', 'Python.'],
+    company: 'GenomaWork',
+  },
+  {
+    title: ' Frontend Developer',
+    logo: '/outside.svg',
+    tecnologies: ['React', 'Material UI', 'Docker', 'Styled Components'],
+    company: 'Outside the cube',
+  },
+  {
+    title: ' Frontend Developer',
+    logo: '/itesa.svg',
+    tecnologies: ['React', 'Gatsby', 'CSS'],
+    company: 'Itesa',
+  },
+  {
+    title: ' Asistente De Profesor',
+    logo: '/plataforma.svg',
+    tecnologies: [
+      'React',
+      'Tailwind CSS',
+      'Styled Components',
+      'Css',
+      'mongoDB',
+      'sql',
+      'Node.js',
+    ],
+    company: 'Plataforma 5',
+  },
 ];
 
 export const navbarData = [

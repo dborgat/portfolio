@@ -36,6 +36,28 @@
       "title": "A little about me",
       "technologies": "I work with",
       "experience": "Experience",
+      "jobsDescription": {
+        "freelance": {
+          "description": "Diverse projects including: Supporting university management systems (US) in monolithic repositories, creating landing pages for real estate, digitalizing a ski rental company in Argentina.",
+          "date": "July 2023 - Present"
+        },
+        "genoma": {
+          "description": "Development of solutions for Genoma's job management app for companies such as Starbucks, Santander, Burger King, with specific functionalities tailored to each business.",
+          "date": "Abril 2022 - Abril 2023"
+        },
+        "outside": {
+          "description": "Supported the internal intensive care bed management system for Red Salud - Chile. Provided support for PhotoPremium, dedicated to digital photo services for schools in France.",
+          "date": "October 2021 - March 2022"
+        },
+        "itesa": {
+          "description": "Project for a promotional campaign for Quilmes Brewery, where I developed a landing page with information and ticket sales for the Quilmes tour.",
+          "date": "June 2021 - September 2021"
+        },
+        "plataforma": {
+          "description": "Guided and supported students throughout the coding bootcamp process. Reviewed workshops and answered questions in Q&A sessions. Facilitated Office Hours to address specific skill development topics. This experience allowed me to develop effective communication skills, work in teams, and provide technical support, all fundamental aspects for my development as a frontend developer.",
+          "date": "Abril 2021 - Agosto 2021"
+        }
+      },
       "contactButton": "Let's talk! 🚀",
       "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading.",
       "content1": "Over the past three years, I have worked as a front-end developer, focusing on generating scalable code and continuously improving existing projects.",

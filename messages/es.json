@@ -36,6 +36,28 @@
       "title": "Un breve repaso sobre mí",
       "technologies": "Tecnologías",
       "experience": "Experiencia",
+      "jobsDescription": {
+        "freelance": {
+          "description": "Proyectos diversos: Soporte a sistemas de gestión universitaria (US) en repos monolíticos, creación de landing pages para real state, digitalización de una empresa de rental de ski en Argentina",
+          "date": "Julio 2023 - Presente"
+        },
+        "genoma": {
+          "description": "Desarrollo de soluciones para la aplicación de gestión de empleo de Genoma para empresas como Starbucks, Santander, Burger King, con funcionalidades específicas adaptadas a cada negocio.",
+          "date": "Abril 2022 - Abril 2023"
+        },
+        "outside": {
+          "description": "Soporte para el sistema de gestión interno de camas de terapia intensiva para Red Salud - Chile. Soporte para PhotoPremium, dedicada al servicio de fotografías digitales para escuelas en Francia.",
+          "date": "Octubre 2021 - Marzo 2022"
+        },
+        "itesa": {
+          "description": "Proyecto para una campaña promocional de Cervecería Quilmes, donde desarrollé una landing con información y venta de tickets para el tour de Quilmes.",
+          "date": "Junio 2021 - Septiembre 2021"
+        },
+        "plataforma": {
+          "description": "Guié y acompañé a los alumnos durante todo el proceso del coding bootcamp. Corregí workshops y respondí preguntas en sesiones de preguntas y respuestas (Q&A). Facilité Office Hours para abordar temas específicos del desarrollo de habilidades. Esta experiencia me permitió desarrollar habilidades de comunicación efectiva, trabajar en equipo y brindar soporte técnico, aspectos fundamentales para mi desarrollo como desarrollador frontend.",
+          "date": "Abril 2021 - Agosto 2021"
+        }
+      },
       "contactButton": "Contactemos! 🚀",
       "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. también disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer.",
       "content1": "Durante los últimos tres años, me he desempeñado como desarrollador front-end, centrándome en la generación de código escalable y la mejora continua de proyectos existentes.",

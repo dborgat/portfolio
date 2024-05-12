@@ -85,7 +85,7 @@ const Header: React.FC = () => {
             <button
               aria-expanded={open}
               aria-label='Open menu'
-              className='block p-2 text-2xl text-slate-800 xl:hidden'
+              className='block p-2 text-2xl text-slate-800 md:hidden'
               onClick={() => setOpen(true)}
             >
               <AlignJustify color='#FA8334' size={30} />
@@ -162,7 +162,7 @@ const Header: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <ul className='xl:flex flex-row justify-between xl:w-3/6 2xl:w-2/5 p-1 hidden'>
+            <ul className='md:flex flex-row justify-between lg:w-4/6 2xl:w-2/5 p-1 hidden'>
               <li
                 className={
                   'group relative flex w-fit items-center justify-center overflow-hidden rounded-md border-2 border-nigth px-4 py-2 font-semibold transition-transform ease-out hover:scale-105'
