@@ -13,14 +13,13 @@
     }
   },
   "Buttons": {
-    "info": "¡Bienvenido! 🚀 te invito a explorar mi trabajo, experiencia y más sobre mí. Haz clic en los botones para encontrar lo que necesitas. ¡Contáctame si quieres colaborar en un proyecto!",
     "projects": {
-      "title": "Quiero saber más sobre tus proyectos:",
-      "subtitle": "Cada proyecto ha sido una oportunidad para mejorar mis habilidades técnicas en HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind y más. Además, han fortalecido mi autonomía en la toma de decisiones. ¿Interesado en saber más? Haz clic aquí para verlos en detalle."
-    },
-    "experience": {
-      "title": "Contame sobre tu experiencia profesional:",
-      "subtitle": "Durante tres años, me especialicé en desarrollo front-end en varios roles diferentes, desde junior hasta semi-senior. Me destaco por tener un rol fundamental en proyectos importantes, como la creación de un sistema de gestión hospitalaria para Red Salud y el rebranding de un sitio web y features nuevas para una aplicacion que gestiona oportunidades laborales. Mis experiencias me han enseñado la importancia de la autonomía, trabajar bajo presión y colaborar estrechamente con equipos y clientes. Estoy preparado para enfrentar cualquier desafío futuro con confianza y determinación."
+      "title": "Te cuento más sobre mis proyectos",
+      "subtitle": "Cada proyecto ha sido una oportunidad para mejorar mis habilidades técnicas en HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind y más. Además, han fortalecido mi autonomía en la toma de decisiones.",
+      "infoProjects": {
+        "description": "Este sitio combina eficiencia y estética para una muy buena experiencia de usuario. Utilizando Next.js para generación de sitios estáticos, App Router para una navegación fluida y Tailwind CSS para un diseño atractivo y personalizable.",
+        "technologies": "React - Next.js - TypeScript - Tailwind CSS"
+      }
     },
     "contact": {
       "title": "Contactemos",
@@ -58,7 +57,6 @@
           "date": "Abril 2021 - Agosto 2021"
         }
       },
-      "contactButton": "Contactemos! 🚀",
       "subtitle": "Soy un apasionado desarrollador front-end con una sólida experiencia en la optimización de sistemas y el desarrollo de aplicaciones web. Destaco por mi habilidad para encontrar soluciones creativas a los problemas y por mi comunicación efectiva en entornos colaborativos. también disfruto la cocina elaborada, juntarme con amigos a jugar juegos de mesa y por la mañana ir al gimnasio o leer.",
       "content1": "Durante los últimos tres años, me he desempeñado como desarrollador front-end, centrándome en la generación de código escalable y la mejora continua de proyectos existentes.",
       "content2": "Uno de mis mayores logros fue tener un rol muy participativo en el desarrollo de un sistema de gestión para medir la disponibilidad de camas en los hospitales de Red Salud, cumpliendo con sus exigentes requisitos. Además, participé en el proceso de rebranding de mi último trabajo, donde contribuí a la creación de un sitio web actualizado y una aplicación con nuevas funcionalidades.",

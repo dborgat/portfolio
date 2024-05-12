@@ -4,24 +4,14 @@ import { useGSAP } from '@gsap/react';
 import { useTranslations, useLocale } from 'next-intl';
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import { Icons } from '../icons';
+import { Icons } from '../../utils/icons';
+import renderLetters from '../../utils/splitStringUsingRegex';
+import { MobileMenu } from './MobileMenu';
 
 const NameAndDescription: React.FC = () => {
   const component = useRef(null);
   const locale = useLocale();
   const t = useTranslations();
-
-  const renderLetters = (text: string, key: string) => {
-    if (!text) return;
-    return text.split('').map((letter, index) => (
-      <span
-        key={key + index}
-        className={`name-animation name-animation-${key} inline-block opacity-0`}
-      >
-        {letter}
-      </span>
-    ));
-  };
 
   useGSAP(
     () => {
@@ -36,8 +26,17 @@ const NameAndDescription: React.FC = () => {
         }
       );
       tl.fromTo(
+        '.mobile-menu',
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: 'elastic.out(1,0.3)',
+        }
+      );
+      tl.fromTo(
         '.name-animation-name',
-        { opacity: 0, x: -50, rotate: -10 },
+        { opacity: 0, x: 50, rotate: 10 },
         {
           opacity: 1,
           rotate: 0,
@@ -51,7 +50,6 @@ const NameAndDescription: React.FC = () => {
           transformOrigin: 'right top',
         }
       );
-
       tl.fromTo(
         '.job-title',
         { opacity: 0, x: -100, scale: 1.2 },
@@ -92,58 +90,7 @@ const NameAndDescription: React.FC = () => {
         <span className='text-nigth'>Frontend</span>
         <span className='text-cardinal'>Developer</span>
       </h1>
-      <div className='size-auto m-auto mt-14 grid gap-10 py-5 lg:hidden'>
-        <Link href={`/${locale}/about`} passHref>
-          <div
-            className={
-              'font-semibold text-6xl text-pumpkin flex flex-row justify-between items-center'
-            }
-          >
-            <span>{t('Index.mainButtons.aboutMe')}</span>
-            {<Icons.AboutMe size={48} />}
-          </div>
-        </Link>
-        <Link href={`/${locale}/projects`} passHref>
-          <div
-            className={
-              'font-semibold text-6xl text-pumpkin flex flex-row justify-between items-center'
-            }
-          >
-            {t('Index.mainButtons.projects')}
-            {<Icons.FolderOpenDot size={48} />}
-          </div>
-        </Link>
-        <Link href={`/${locale}/contact`} passHref>
-          <div
-            className={
-              'font-semibold text-6xl text-pumpkin flex flex-row justify-between items-center'
-            }
-          >
-            {t('Index.mainButtons.contact')}
-            {<Icons.Handshake size={48} />}
-          </div>
-        </Link>
-        <Link href='https://github.com/dborgat' passHref>
-          <div
-            className={
-              'font-semibold text-6xl text-pumpkin flex flex-row justify-between items-center'
-            }
-          >
-            {t('Index.mainButtons.github')}
-            {<Icons.GitMerge size={48} />}
-          </div>
-        </Link>
-        <Link href='https://www.linkedin.com/in/david-borgat' passHref>
-          <div
-            className={
-              'font-semibold text-6xl text-pumpkin flex flex-row justify-between items-center'
-            }
-          >
-            {t('Index.mainButtons.linkedin')}
-            {<Icons.Linkedin size={48} />}
-          </div>
-        </Link>
-      </div>
+      <MobileMenu />
     </div>
   );
 };

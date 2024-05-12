@@ -13,14 +13,13 @@
     }
   },
   "Buttons": {
-    "info": "Welcome! 🚀 I invite you to explore my work, experience, and learn more about me. Click on the buttons to find what you need. Contact me if you'd like to collaborate on a project!",
     "projects": {
-      "title": "I want to know more about your projects:",
-      "subtitle": "Each project has been an opportunity to enhance my technical skills in HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind and more. They have also strengthened my autonomy in decision-making. Interested in learning more? Click here to see them in detail."
-    },
-    "experience": {
-      "title": "Tell me more about your experience:",
-      "subtitle": "For three years, I specialized in front-end development in various roles, from junior to semi-senior. I stand out for playing a key role in significant projects, such as creating a hospital management system for Red Salud and rebranding a website, as well as implementing new features for a job opportunities application. My experiences have taught me the importance of autonomy, working under pressure, and closely collaborating with teams and clients. I am prepared to tackle any future challenge with confidence and determination."
+      "title": "Let's talk about my projects.",
+      "subtitle": "Each project has been an opportunity to enhance my technical skills in HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind and more. They have also strengthened my autonomy in decision-making.",
+      "infoProjects": {
+        "description": "This website combines efficiency and aesthetics for a great user experience. Utilizing Next.js for static site generation, App Router for seamless navigation, and Tailwind CSS for attractive and customizable design.",
+        "technologies": "React - Next.js - TypeScript - Tailwind CSS"
+      }
     },
     "contact": {
       "title": "Let's get in touch",
@@ -58,7 +57,6 @@
           "date": "Abril 2021 - Agosto 2021"
         }
       },
-      "contactButton": "Let's talk! 🚀",
       "subtitle": "I'm a passionate front-end developer with a strong background in system optimization and web application development. I excel at finding creative solutions to problems and communicating effectively in collaborative environments. Outside of work, I enjoy cooking, playing board games, cycling, working out, and reading.",
       "content1": "Over the past three years, I have worked as a front-end developer, focusing on generating scalable code and continuously improving existing projects.",
       "content2": "One of my greatest achievements was playing a highly participatory role in the development of a management system to measure bed availability in Red Salud hospitals, meeting their stringent requirements. Additionally, I participated in the rebranding process of my last job, where I contributed to creating an updated website and an application with new functionalities.",

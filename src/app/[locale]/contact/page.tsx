@@ -57,12 +57,11 @@ export default function ContactPage() {
   );
 
   return (
-    <Bounded ref={component}>
+    <Bounded ref={component} className='content-center h-full'>
       <div className='grid gap-x-8 gap-y-3 grid-cols-1 justify-items-center contact opacity-0'>
         <Heading as='h1' size='lg' className='text-center text-pumpkin mt-5'>
           {t('title')}
         </Heading>
-
         <div className='md:w-2/3 p-3 text-center md:mt-0'>
           <span className='prose prose-2xl prose-slate prose-invert col-start-1 grid gap-2 lg:p-0 p-2'>
             {t('subtitle')}

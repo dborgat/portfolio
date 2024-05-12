@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from '../../navigation';
 import { useRouter } from '@/navigation';
-import { Icons } from '../icons';
+import { Icons } from '../../utils/icons';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
@@ -53,7 +53,7 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
               src='/github.png'
               alt='github icon'
               width={40}
-              height={35}
+              height={40}
               priority
             />
           </Link>
@@ -69,7 +69,7 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
               src='/linkedin.png'
               alt='linkedin icon'
               width={45}
-              height={35}
+              height={45}
               priority
             />
           </Link>
