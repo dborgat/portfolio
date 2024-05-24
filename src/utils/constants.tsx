@@ -46,8 +46,11 @@ export const workExperience = [
       'Tailwind CSS',
       'Styled Components',
       'Css',
-      'mongoDB',
-      'sql',
+      'MongoDB',
+      'Sql',
+      'Docker',
+      'Php',
+      'TypeScript',
       'Node.js',
     ],
     company: 'Plataforma 5',
@@ -55,7 +58,7 @@ export const workExperience = [
 ];
 
 export const headerRouter = [
-  { link: '/about', color: 'battleshipGrey' },
+  { link: '/about', color: 'cardinal' },
   { link: '/projects', color: 'slateBlue' },
   { link: '/contact', color: 'cardinal' },
 ];
