@@ -2,7 +2,7 @@
 import React from 'react';
 import Bounded from '../../../components/Bounded';
 import Heading from '../../../components/Heading';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import Button from '../../../components/Button';
 import Avatar from '../../../components/biography/Avatar';
 import TechList from '../../../components/biography/TechList';
@@ -13,6 +13,7 @@ import Experience from '../../../components/biography/Experience';
 const Biography: React.FC = () => {
   const component = React.useRef(null);
   const t = useTranslations('Buttons.aboutMe');
+  const locale = useLocale();
 
   useGSAP(
     () => {
@@ -62,7 +63,12 @@ const Biography: React.FC = () => {
           <span>{t('content3')}</span>
           <span>{t('content4')}</span>
         </div>
-        <Button text={t('resume')} className='mt-8' />
+        <a
+          href={`${locale === 'es' ? '/dbespcv.pdf' : '/dbengcv.pdf'}`}
+          download='davidcv.pdf'
+        >
+          <Button text={t('resume')} className='mt-8' />
+        </a>
         <Avatar />
       </div>
       <TechList />

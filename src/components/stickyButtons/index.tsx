@@ -48,9 +48,12 @@ const StickyButtons: React.FC<Props> = ({ locale }) => {
     after:content-["ESP"] checked:after:content-["ENG"] after:text-xl'
         />
         <div className=' grid justify-center rounded-md p-1 bg-slateBlue'>
-          <Link href='/' download='/davor2.jpeg'>
+          <a
+            href={`${locale === 'es' ? '/dbespcv.pdf' : '/dbengcv.pdf'}`}
+            download='davidcv.pdf'
+          >
             <Icons.FileInput size={40} />
-          </Link>
+          </a>
         </div>
         <div className='bg-slateBlue grid justify-center rounded-md p-1'>
           <Link href='https://github.com/dborgat' target='_blank'>
