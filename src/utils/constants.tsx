@@ -1,4 +1,7 @@
 export const techListArray = [
+  { name: 'JavaScript', color: '#F0DB' },
+  { name: 'HTML', color: '#E34F26' },
+  { name: 'CSS', color: '#264DE4'},
   { name: 'React', color: '#E55381' },
   { name: 'Next.js', color: '#8CB369' },
   { name: 'Tailwind CSS', color: '#F1D302' },
@@ -10,6 +13,10 @@ export const techListArray = [
   { name: 'TypeScript', color: '#B9314F' },
   { name: 'Framer Motion', color: '#CE1483' },
   { name: 'Node.js', color: '#ABE188' },
+  { name: 'MongoDB', color: '#4DB33D' },
+  { name: 'Sql', color: '#e17644b9' },
+  { name: 'Docker', color: '#0DB7ED' },
+  { name: 'Php', color: '#4F5B93' },
   { name: 'Git', color: '#EAE151' },
 ];
 
