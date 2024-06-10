@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
         <div className='bg-nigth rounded-md p-5 lg:w-2/3 mx-auto subtitle opacity-0'>
           <span className='text-nonPhotoBlue text-2xl'>{t('subtitle')}</span>
         </div>
-        {Array.from({ length: 4 }, (_, index) => (
+        {Array.from({ length: 3 }, (_, index) => (
           <div
             key={index}
             className={clsx(
