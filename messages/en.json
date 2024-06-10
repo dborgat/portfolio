@@ -17,8 +17,18 @@
       "title": "Let's talk about my projects.",
       "subtitle": "Each project has been an opportunity to enhance my technical skills in HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind and more. They have also strengthened my autonomy in decision-making.",
       "infoProjects": {
-        "description": "This website combines efficiency and aesthetics for a great user experience. Utilizing Next.js for static site generation, App Router for seamless navigation, and Tailwind CSS for attractive and customizable design.",
-        "technologies": "React - Next.js - TypeScript - Tailwind CSS"
+        "nutrivita": {
+          "description": "This website combines efficiency and aesthetics for a great user experience. Utilizing Next.js for static site generation, App Router for seamless navigation, and Tailwind CSS for attractive and customizable design.",
+          "technologies": "React - Next.js - TypeScript - Tailwind CSS"
+        },
+        "rescataditos": {
+          "description": "'Rescataditos' is developed using Next.js, Tailwind CSS, Prisma as ORM, and PostgreSQL. The application's goal is to connect individuals, couples, and families with rescue organizations, facilitating the adoption and fostering of animals. The project is still in development.",
+          "technologies": "Next Js - React - TypeScript - Tailwind CSS - PostgreSQL - Prisma"
+        },
+        "promociones": {
+          "description": "This app is a challenge developed in PHP with Laravel, Vite, and React. The app aims to display promotional codes, allowing clients to save and later redeem them.",
+          "technologies": "PHP, Laravel, Vite, React"
+        }
       }
     },
     "contact": {

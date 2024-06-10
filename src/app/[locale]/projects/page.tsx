@@ -8,9 +8,11 @@ import { useGSAP } from '@gsap/react';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { projects } from '../../../utils/constants';
 
 const Projects: React.FC = () => {
   const component = React.useRef(null);
+  const keys = ['nutrivita', 'rescataditos', 'promociones'] as const;
   const t = useTranslations('Buttons.projects');
 
   useGSAP(
@@ -38,7 +40,7 @@ const Projects: React.FC = () => {
         <div className='bg-nigth rounded-md p-5 lg:w-2/3 mx-auto subtitle opacity-0'>
           <span className='text-nonPhotoBlue text-2xl'>{t('subtitle')}</span>
         </div>
-        {Array.from({ length: 3 }, (_, index) => (
+        {projects.map(({ title, link, image }, index) => (
           <div
             key={index}
             className={clsx(
@@ -47,28 +49,28 @@ const Projects: React.FC = () => {
             )}
           >
             <div className='flex flex-col gap-5 items-center'>
-              <Link href='https://nutriyvita.com.ar' passHref target='_blank'>
+              <Link href={link} passHref target='_blank'>
                 <span className='text-pumpkin text-4xl font-sans font-semibold border-b hover:text-oldGold'>
-                  Nutri y Vita
+                  {title}
                 </span>
               </Link>
               <span className='text-pumpkin text-2xl'>
-                {t('infoProjects.description')}
+                {t(`infoProjects.${keys[index]}.description`)}
               </span>
               <span className='text-nigth text-2xl font-mono font-bold bg-oldGold rounded-lg text-center p-4 hover:scale-105'>
-                {t('infoProjects.technologies')}
+                {t(`infoProjects.${keys[index]}.technologies`)}
               </span>
               <Image
-                src='/nutri.png'
-                alt='nutriyvita'
+                src={image}
+                alt={title}
                 width={500}
                 height={180}
                 className='rounded-lg xl:hidden'
               ></Image>
             </div>
             <Image
-              src='/nutri.png'
-              alt='nutriyvita'
+              src={image}
+              alt={title}
               width={500}
               height={180}
               className='rounded-lg hidden xl:block hover:scale-105'

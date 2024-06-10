@@ -1,7 +1,9 @@
+import { link } from 'fs';
+
 export const techListArray = [
   { name: 'JavaScript', color: '#F0DB' },
   { name: 'HTML', color: '#E34F26' },
-  { name: 'CSS', color: '#264DE4'},
+  { name: 'CSS', color: '#264DE4' },
   { name: 'React', color: '#E55381' },
   { name: 'Next.js', color: '#8CB369' },
   { name: 'Tailwind CSS', color: '#F1D302' },
@@ -61,6 +63,24 @@ export const workExperience = [
       'Node.js',
     ],
     company: 'Plataforma 5',
+  },
+];
+
+export const projects = [
+  {
+    title: 'Nutri y Vita',
+    image: '/nutri.png',
+    link: 'https://nutriyvita.com.ar',
+  },
+  {
+    title: 'Rescataditos',
+    image: '/rescataditos.png',
+    link: 'https://vercel.com/dborgats-projects/rescataditos',
+  },
+  {
+    title: 'Promociones',
+    image: '/promocodes.png',
+    link: 'https://github.com/dborgat/promociones',
   },
 ];
 
